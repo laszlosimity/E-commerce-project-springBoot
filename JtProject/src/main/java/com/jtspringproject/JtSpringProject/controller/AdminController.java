@@ -64,7 +64,7 @@ public class AdminController {
 		
 		return "adminlogin";
 	}
-	@GetMapping("Dashboard")
+	@GetMapping("adminhome")
 	public String adminHome(Model model) {
 		if(adminlogcheck==1)
 			return "adminHome";
