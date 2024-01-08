@@ -41,6 +41,7 @@ public class HibernateConfiguration {
  
     @Bean
     public DataSource dataSource() {
+        //System.out.print("It is:" + USERNAME + PASSWORD + URL);
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(DRIVER);
         dataSource.setUrl(URL);
