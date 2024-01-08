@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - image: lsimity/ecomm
-        name: guestbook-ui
+        name: ecomm-ui
         ports:
         - containerPort: 8001
