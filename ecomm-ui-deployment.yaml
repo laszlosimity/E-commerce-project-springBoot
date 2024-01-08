@@ -18,3 +18,5 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 8001
+      imagePullSecrets:
+        - name: regcred
