@@ -14,7 +14,7 @@ spec:
         app: ecomm-ui
     spec:
       containers:
-      - image: lsimity/ecomm:latest
+      - image: lsimity/ecomm:35
         name: ecomm-ui
         ports:
-        - containerPort: 8001
+        - containerPort: 8010
