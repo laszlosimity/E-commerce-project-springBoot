@@ -50,7 +50,7 @@ public class AdminController {
 	@GetMapping("/index")
 	public String index(Model model) {
 		if(usernameforclass.equalsIgnoreCase(""))
-			return "userLogin";
+			return "adminlogin";
 		else {
 			model.addAttribute("username", usernameforclass);
 			return "index";
@@ -169,7 +169,7 @@ public class AdminController {
 		System.out.println(categoryId);
 		Category category = this.categoryService.getCategory(categoryId);
 		Product product = new Product();
-		product.setId(categoryId);
+		//product.setId(categoryId); It's an auto-increment field.
 		product.setName(name);
 		product.setCategory(category);
 		product.setDescription(description);
